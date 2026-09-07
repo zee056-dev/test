@@ -3,187 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>ClothiQue – responsive</title>
+    <!-- Font & base styles are inlined for responsiveness -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
-    <!-- navbar section -->
+    <!-- navbar -->
     <div class="navbar">
-      <div class="logo">
-        <h1>ClothiQue</h1>
-      </div>
-
+      <div class="logo"><h1>ClothiQue</h1></div>
       <div>
         <ul class="uflex">
-          <li><a href="">Home</a></li>
-          <li><a href="products.html">products</a></li>
-          <li><a href="offers.html">Offer</a></li>
-          <li><a href="">about us</a></li>
-          <li><a href="">contact us</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#offers">Offer</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
       </div>
-
-      <div class="but">
-        <div>
-          <button>order now</button>
-        </div>
-      </div>
+      <div class="but"><button>Order now</button></div>
     </div>
 
-    <!-- hero section -->
-    <section class="bg">
-      <h1>
-        Weclome to <br />
-        clothique
-      </h1>
+    <!-- hero -->
+    <section class="bg" style="padding-block: 0">
+      <h1>Welcome to <br />ClothiQue</h1>
     </section>
 
-    <!-- about section -->
-    <section>
-      <div class="full">
-        <div class="leftside">
-          <h3>strieght meets style</h3>
-
-          <h1>
-            Welcome to <br />
-            ClothiQue
-          </h1>
-
-          <p>
-            Welcome to your one-stop shop for all things trendy and affordable.
-            We bring you the latest styles, top-quality products, and deals
-            you’ll love — all just a click away. Whether you're shopping for
-            fashion, beauty, or accessories, we've got something special for
-            everyone.
-          </p>
-
-          <button>Shop now</button>
-        </div>
-
-        <div class="rightside">
-          <img src="./img/g3.png" alt="" />
+    <!-- about -->
+    <section id="about">
+      <div class="container">
+        <div class="full">
+          <div class="leftside">
+            <h3>street meets style</h3>
+            <h1>Welcome to <br />ClothiQue</h1>
+            <p>
+              Welcome to your one-stop shop for all things trendy and
+              affordable. We bring you the latest styles, top-quality products,
+              and deals you’ll love — all just a click away. Whether you're
+              shopping for fashion, beauty, or accessories, we've got something
+              special for everyone.
+            </p>
+            <button class="btn-dark">Shop now</button>
+          </div>
+          <div class="rightside">
+            <img src="./img/g1.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- deals section -->
-    <section>
-      <div class="hd">
-        <h1>
-          Style Deal Up <br />
-          70% Off
-        </h1>
-      </div>
-
-      <div class="maindeal">
-        <div class="deals">
-          <img src="./img/f2.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
+    <!-- deals -->
+    <section id="offers">
+      <div class="container">
+        <div class="hd">
+          <h1>Style Deal Up <br />70% Off</h1>
         </div>
-
-        <div class="deals2">
-          <img src="./img/f3.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
-        </div>
-
-        <div class="deals3">
-          <img src="./img/f4.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
+        <div class="maindeal">
+          <div class="deals">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjOTk5Ii8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzc3NyIvPjwvc3ZnPg=="
+              alt="dress"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
+          <div class="deals2">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjYWFhIi8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzY2NiIvPjwvc3ZnPg=="
+              alt="dress"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
+          <div class="deals3">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjYmJhIi8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzU1NSIvPjwvc3ZnPg=="
+              alt="dress"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- products category section -->
-    <section>
-      <div class="hd">
-        <h1>products catagory</h1>
-      </div>
-
-      <div class="maindeal">
-        <div class="deals">
-          <img src="./img/f2.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
+    <!-- products category -->
+    <section id="products">
+      <div class="container">
+        <div class="hd"><h1>products category</h1></div>
+        <div class="maindeal">
+          <div class="deals">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjY2NjIi8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzk5OSIvPjwvc3ZnPg=="
+              alt="cat"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
+          <div class="deals2">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjYmJhIi8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzg4OCIvPjwvc3ZnPg=="
+              alt="cat"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
+          <div class="deals3">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjYWFhIi8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzc3NyIvPjwvc3ZnPg=="
+              alt="cat"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
         </div>
-
-        <div class="deals2">
-          <img src="./img/f3.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
-        </div>
-
-        <div class="deals3">
-          <img src="./img/f4.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
-        </div>
-      </div>
-
-      <div class="maindeal">
-        <div class="deals">
-          <img src="./img/f2.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
-        </div>
-
-        <div class="deals2">
-          <img src="./img/f3.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
-        </div>
-
-        <div class="deals3">
-          <img src="./img/f4.jpeg" alt="" />
-          <h3>
-            Nair Luxe Dress <br />
-            $200
-          </h3>
+        <div class="maindeal" style="margin-top: 2rem">
+          <div class="deals">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjY2NjIi8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzk5OSIvPjwvc3ZnPg=="
+              alt="cat"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
+          <div class="deals2">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjYmJhIi8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzg4OCIvPjwvc3ZnPg=="
+              alt="cat"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
+          <div class="deals3">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgMjgwIDI4MCI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIyODAiIGZpbGw9IiNlZGVkZWQiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxMjAiIHI9IjUwIiBmaWxsPSIjYWFhIi8+PHJlY3QgeD0iMTAwIiB5PSIxODAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgZmlsbD0iIzc3NyIvPjwvc3ZnPg=="
+              alt="cat"
+            />
+            <h3>Nair Luxe Dress <br />$200</h3>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- banner section -->
-    <section>
-      <div class="mainbanner">
-        <div class="banner">
-          <img src="./img/g1.png" alt="" />
-        </div>
-
-        <div class="bannercn">
-          <h5>Limited time Offer</h5>
-
-          <h2>
-            70% off on this friday and <br />
-            special gift
-          </h2>
-
-          <button>Shop Now</button>
-        </div>
-
-        <div class="banner2">
-          <img src="./img/g2.png" alt="" />
+    <!-- banner -->
+    <section id="contact">
+      <div class="container">
+        <div class="mainbanner">
+          <div class="banner">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiB2aWV3Qm94PSIwIDAgMTYwIDE2MCI+PHJlY3Qgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxNjAiIGZpbGw9IiNkZGNlYzUiLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjcwIiByPSIzNSIgZmlsbD0iI2FhOTk4YyIvPjxyZWN0IHg9IjUwIiB5PSIxMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzdhNjg0OCIvPjwvc3ZnPg=="
+              alt="gift"
+            />
+          </div>
+          <div class="bannercn">
+            <h5>Limited time Offer</h5>
+            <h2>70% off on this friday and <br />special gift</h2>
+            <button class="btn-dark">Shop Now</button>
+          </div>
+          <div class="banner2">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAiIGhlaWdodD0iMTYwIiB2aWV3Qm94PSIwIDAgMTYwIDE2MCI+PHJlY3Qgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxNjAiIGZpbGw9IiNkZGNlYzUiLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjcwIiByPSIzNSIgZmlsbD0iIzhhN2I2MCIvPjxyZWN0IHg9IjUwIiB5PSIxMTAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzVhNGIzNSIvPjwvc3ZnPg=="
+              alt="gift2"
+            />
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- footer (extra) -->
+    <footer class="container">
+      <div class="foot">
+        <div class="copy">© 2026 ClothiQue · style for all</div>
+        <div class="emailbx">
+          <input type="email" placeholder="Your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

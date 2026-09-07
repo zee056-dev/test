@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -7,152 +5,444 @@
 }
 
 html {
-  font-size: 62.5%;
-}
-
-:root {
-  --maincolor: ;
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.5;
 }
 
 section {
-  padding-block: 7rem;
+  padding-block: 5rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+/* ----- buttons & shared ----- */
+.btn-dark {
+  background: #000;
+  color: #fff;
+  padding: 1.2rem 2.8rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.25s ease;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+.btn-dark:hover {
+  background: #2a2a2a;
+  transform: scale(1.02);
+}
+
+/* ----- navbar ----- */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  padding-inline: 10rem;
-  padding-block: 2rem;
+  flex-wrap: wrap;
   align-items: center;
-  align-content: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  gap: 1.5rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
 }
+
 .logo h1 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .uflex {
   display: flex;
-  gap: 5rem;
+  flex-wrap: wrap;
+  gap: 2.8rem;
   list-style: none;
-  margin-left: 10rem;
+  margin: 0;
+  padding: 0;
 }
-
 .uflex li a {
   text-decoration: none;
-  color: black;
-  font-size: 1.4rem;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.2s;
+  text-transform: capitalize;
+}
+.uflex li a:hover {
+  color: #b8860b;
 }
 
+.but {
+  flex-shrink: 0;
+}
 .but button {
   background: #000;
   color: white;
-  padding: 1.5rem 2.5rem;
-  border-radius: 1.5rem;
+  padding: 1.2rem 2.8rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.but button:hover {
+  background: #2e2e2e;
 }
 
-/* hero section */
+/* ----- hero (bg) ----- */
 .bg {
-  background-image: url(./img/f1.png);
-  background-repeat: no-repeat;
+  background: url("./img/f1.png");
   background-size: cover;
-  height: 85dvh;
+  background-position: center;
+  min-height: 80vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  background-blend-mode: overlay;
 }
 .bg h1 {
-  font-size: 10rem;
-  color: white;
+  font-size: clamp(4rem, 12vw, 9rem);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.1;
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  letter-spacing: -1px;
 }
+
+/* ----- about (full) ----- */
 .full {
   display: flex;
-  padding-inline: 10rem;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  gap: 4rem;
+  padding: 2rem 0;
 }
-.leftside p {
-  font-size: 1.5rem;
-}
-.leftside button {
-  margin-top: 3rem;
-}
-.rightside img {
-  width: 400px;
+
+.leftside {
+  flex: 1 1 300px;
 }
 .leftside h3 {
-  margin-bottom: 3rem;
-  font-size: 1.7rem;
-  color: goldenrod;
+  color: #b8860b;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
 }
-.leftside button {
-  background: #000;
-  color: white;
-  padding: 1.5rem 2rem;
-  border-radius: 1.5rem;
+.leftside h1 {
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
-.maindeal img {
+.leftside p {
+  font-size: 1.6rem;
+  color: #3a3a3a;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+.rightside {
+  flex: 1 1 280px;
   display: flex;
-  width: 300px;
+  justify-content: center;
 }
-.deals2 img {
-  width: 280px;
+.rightside img {
+  max-width: 380px;
+  width: 100%;
+  object-fit: contain;
 }
-.maindeal {
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 10rem;
-}
+
+/* ----- deals & category (shared) ----- */
 .hd {
   padding-bottom: 3rem;
-  padding-inline: 10rem;
-}
-
-.mainbanner{
-  display: flex;
-  justify-content: space-between;
-  background: #d1c3c3;
-  margin-inline: 10rem;
-  gap: 2rem;
-  
-}
-
-.bannercn{
-  justify-content: center;
   text-align: left;
-  color: rgb(11, 13, 13);
-  margin-block: 17rem;
 }
-.bannercn h5{
-  text-align: start;
-  font-size: small;
-  margin-block: 3rem;
-  color: rgb(10, 6, 2);
+.hd h1 {
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
 }
-.bannercn h2{
-  font-size: 1.7rem;
 
-}
-.bannercn button{
-   background: #000;
-  color: white;
-  padding: 1.5rem 2rem;
-  border-radius: 1.5rem;
-  margin-top: 3rem;
-
-}
-.foot{
+.maindeal {
   display: flex;
-  padding-inline: 10rem;
-  justify-content: space-between;
-  font-size: 2rem;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem 2.5rem;
+  padding-block: 1rem;
 }
-.emailbx{
-  width: 5rem;
-  margin-right: 50rem;
-  
+
+.deals,
+.deals2,
+.deals3 {
+  flex: 1 1 220px;
+  max-width: 280px;
+  text-align: center;
+  background: #fafafa;
+  padding: 1.5rem 1rem 2rem;
+  border-radius: 2.4rem;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+.deals:hover,
+.deals2:hover,
+.deals3:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px);
+}
+.deals img,
+.deals2 img,
+.deals3 img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 2rem;
+  background: #f0f0f0;
+  margin-bottom: 1.2rem;
+}
+.deals h3,
+.deals2 h3,
+.deals3 h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ----- banner ----- */
+.mainbanner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #eae3db;
+  border-radius: 3.6rem;
+  padding: 2rem 3rem;
+  gap: 2rem;
+  margin: 0 1rem;
+}
+.banner,
+.banner2 {
+  flex: 0 1 160px;
+  display: flex;
+  justify-content: center;
+}
+.banner img,
+.banner2 img {
+  max-width: 160px;
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.1));
+}
+.bannercn {
+  flex: 2 1 260px;
+  text-align: center;
+}
+.bannercn h5 {
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  color: #6b4f2a;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.bannercn h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+.bannercn .btn-dark {
+  background: #000;
+  color: #fff;
+  padding: 1.2rem 3.2rem;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+}
+
+/* ----- footer (extra from style) ----- */
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 0 2rem;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.foot .copy {
+  font-size: 1.4rem;
+  color: #3f3f3f;
+}
+.emailbx {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.emailbx input {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  min-width: 200px;
+  flex: 1 1 160px;
+  outline: none;
+}
+.emailbx input:focus {
+  border-color: #000;
+}
+.emailbx button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem 2.6rem;
+  border-radius: 3rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.emailbx button:hover {
+  background: #2b2b2b;
+}
+
+/* ----- responsive fine-tune ----- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+    padding-inline: 1.5rem;
+  }
+  .uflex {
+    justify-content: center;
+    gap: 1.8rem;
+  }
+  .uflex li a {
+    font-size: 1.4rem;
+  }
+  .but {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .full {
+    flex-direction: column;
+    text-align: center;
+  }
+  .leftside p {
+    margin-inline: auto;
+  }
+  .rightside img {
+    max-width: 280px;
+  }
+
+  .maindeal {
+    gap: 2rem;
+  }
+  .deals,
+  .deals2,
+  .deals3 {
+    flex: 1 1 160px;
+    max-width: 200px;
+  }
+  .mainbanner {
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+  .banner,
+  .banner2 {
+    flex: 0 1 120px;
+  }
+  .bannercn h2 {
+    font-size: 2.2rem;
+  }
+
+  .foot {
+    flex-direction: column;
+    text-align: center;
+  }
+  .emailbx {
+    justify-content: center;
+    width: 100%;
+  }
+  .emailbx input {
+    min-width: 140px;
+  }
+  .hd {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding-block: 3.5rem;
+  }
+  .navbar {
+    padding-inline: 1rem;
+  }
+  .uflex {
+    gap: 1.2rem;
+  }
+  .uflex li a {
+    font-size: 1.2rem;
+  }
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .bg {
+    min-height: 45vh;
+  }
+  .bg h1 {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+  .leftside h1 {
+    font-size: 2.8rem;
+  }
+  .deals,
+  .deals2,
+  .deals3 {
+    flex: 1 1 130px;
+    max-width: 160px;
+  }
+  .mainbanner {
+    border-radius: 2rem;
+    padding: 2rem 1rem;
+  }
+  .bannercn h2 {
+    font-size: 1.9rem;
+  }
+  .btn-dark,
+  .but button {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+  }
+  .emailbx input {
+    min-width: 120px;
+    padding: 0.8rem 1.4rem;
+  }
 }
